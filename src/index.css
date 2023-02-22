@@ -1,0 +1,21 @@
+.alertContainer {
+    background-color: rgb(218, 249, 209);
+    position: relative;
+    margin-top: 1%;
+    left: 35%;
+    display: flex;
+    align-items: center;
+    color: rgb(46, 145, 15);
+    height: 37px;
+    width: 30vw;
+    border-radius: 3px;
+    position: fixed;
+    bottom: 3%;
+    left: 35%;
+}
+
+.alertText {
+    margin-left: 10px
+}
+
+.alertComponent {}
