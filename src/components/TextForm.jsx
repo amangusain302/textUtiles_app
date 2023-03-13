@@ -95,16 +95,14 @@ export default function TextForm(props) {
         </h3>
         <p>
           <b>
-            {/* {text.split(" ")[text.split(" ").length - 1] === ""
-              ? text.split(" ").length - 1
-              : text.split(" ").length} */}
-              {text.split(" ").filter(word => word !== "").length}
+              {text.split(/\s+/).filter(word => word !== "").length }
+              { console.log(text.split(" "))}
           </b>{" "}
           words and <b>{text.length}</b> characters
         </p>
         <p>
           Reading Time Estimation :{" "}
-          <b> {text.split(" ").filter(word => word !== "").length * 0.008  } minutes</b>
+          <b> {text.split(/\s+/).filter(word => word !== "").length * 0.008  } minutes</b>
         </p>
         <h3>Preview</h3>
         <p>{(text.length)?text : "Enter somthing in above text box to preview here"}</p>
